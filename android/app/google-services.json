@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "649960988329",
+    "project_id": "journal-app-cc5bd",
+    "storage_bucket": "journal-app-cc5bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649960988329:android:b5d5b0224b68777f1b53b8",
+        "android_client_info": {
+          "package_name": "com.salihgencer.journal_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649960988329-keeetp192gg0vo3r56j618e8e6d8h8hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPjAgfDL4ckj_ZGfeO5ohxMkRPyE2aUfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649960988329-keeetp192gg0vo3r56j618e8e6d8h8hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
