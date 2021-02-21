@@ -63,15 +63,27 @@ class _EntryScreenState extends State<EntryScreen> {
               ),
               minLines: 10,
               maxLines: 12,
+              onChanged: (String value) {
+                entryProvider.changeEntry = value;
+              },
+              controller: entryController,
             ),
             RaisedButton(
-              onPressed: () {},
+              color: Colors.blue,
+              onPressed: () {
+                entryProvider.saveEntry();
+                Navigator.of(context).pop();
+              },
               child: Text("Save"),
             ),
             widget.entry != null
                 ? RaisedButton(
-                    onPressed: () {},
-                    child: Text("Save"),
+                    color: Colors.red,
+                    onPressed: () {
+                      entryProvider.removeEntry(widget.entry.entryId);
+                      Navigator.of(context).pop();
+                    },
+                    child: Text("Delete"),
                   )
                 : SizedBox(),
           ],

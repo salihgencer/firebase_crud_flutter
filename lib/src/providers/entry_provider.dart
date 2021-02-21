@@ -44,10 +44,11 @@ class EntryProvider with ChangeNotifier {
   }
 
   saveEntry() {
-    if (_entryId != null) {
+    if (_entryId == null) {
       //Add
+      var generateUuid = uuid.v4();
       var newEntry = Entry(
-          entryId: uuid.v4(), date: _date.toIso8601String(), entry: _entry);
+          entryId: generateUuid, date: _date.toIso8601String(), entry: _entry);
       _firestoreService.setEntry(newEntry);
     } else {
       // Edit
