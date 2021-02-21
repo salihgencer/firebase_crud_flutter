@@ -22,6 +22,6 @@ class FirestoreService {
 
   // Delete
   Future<void> removeEntry(String entryId) {
-    return _db.collection("entry").doc(entryId).delete();
+    return _db.collection("entries").doc(entryId).delete();
   }
 }
